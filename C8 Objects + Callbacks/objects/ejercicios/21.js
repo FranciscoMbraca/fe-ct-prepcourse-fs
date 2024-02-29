@@ -9,6 +9,32 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
   // PorcentajeDeDescuento ---> 0.2
   // Precio final ---> 8
   // Tu código:
+  //var  cal = objetoProducto.calcularPrecioDescuento;
+ 
+  objetoProducto.calcularPrecioDescuento = function() 
+  {
+    var descuento = objetoProducto.precio * objetoProducto.porcentajeDeDescuento;
+    var preciof =  objetoProducto.precio - descuento;
+  //  console.log(preciof);
+ // storeItem.calcularPrecioDescuento
+  
+    return preciof;
+   
+  };
+//return objetoProducto.calcularPrecioDescuento;
+ 
+
 }
+
+/*const storeItem = {
+  precio: 5,
+  porcentajeDeDescuento: 0.5
+};
+
+
+agregarMetodoCalculoDescuento(storeItem);
+console.log(storeItem);*/
+
+ 
 
 module.exports = agregarMetodoCalculoDescuento;

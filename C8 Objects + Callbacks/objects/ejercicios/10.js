@@ -4,6 +4,10 @@ function agregarPropiedad(objeto, propiedad) {
   // Esta propiedad será igual al valor `null`.
   // Retornar el objeto.
   // Tu código:
+  
+  objeto[propiedad] = null;
+  return objeto;
+  //console.log(objeto);
 }
-
+//agregarPropiedad({Edificio: "Edificio", piso: "16"})
 module.exports = agregarPropiedad;
